@@ -1,0 +1,37 @@
+.project{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*Asi la imagen se va adaptar a su contenedor*/
+.project-image img{
+    max-inline-size: 100%;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .project {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+     /*Que tanto la imagen y la descripcion tenga 50% del contenedor*/
+    .project-description{
+        flex: 1;
+    }
+
+    /*Seleccionar los elementos impares cambiarlos de posicion*/
+    .project:nth-child(odd) .project-image{
+        order: 2;
+        flex: 1;
+        /*Centrar dentro de su bloque/contenedor*/
+        text-align: center;
+    }
+}

@@ -1,0 +1,18 @@
+.button-icon{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--white);
+    border: 2px solid var(--purple);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-icon img{
+    /*La propiedad vertical-align puede usarse para alterar 
+    la ubicación vertical de un elemento en línea, en relación
+     a su elemento padre o a la línea del elemento
+        -middle (alinea el punto medio vertical del elemento con la línea 
+        base más la mitad de x-height--la altura de la letra "x"--del padre)
+     https://www.htmlhelp.com/es/reference/css/text/vertical-align.html*/
+    vertical-align: middle;
+}

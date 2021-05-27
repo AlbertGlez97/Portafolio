@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Alberto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+     <header class="header">
+         <!-- Lo que hace es perder todas las propiedas flexibles , un contenedor flexible aplica solamente a suus hijos directos -->
+         <div class="wrapper">
+             <!-- Va contender todos los elementos que tienen que ver con Css y laeyun  -->
+             <div class="header-content">
+                 <img src="./img/logo.png" width="70" height="20" alt="logo">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a class="is-active" href="#">Hola</a>
+                    </li>
+                    <li>
+                        <a href="#">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Hablemos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a target="_blank" href="./documents/Curriculum.pdf" class="button">Curriculum</a>
+            <!-- <button class="button is-secondary">Curriculum</button> -->
+             </div>
+         </div>
+        </header>
+
+    <div class="wrapper">
+    <section class="hero">
+         <div class="hero-image">
+            <img src="./img/albert.jpeg" width="338" height="330" alt="jaume">
+         </div>
+
+         <div class="hero-description">
+                <h1>
+                    <span>!Hola a todos!</span>
+                    <span>Soy Alberto</span>
+                </h1>
+                <p>
+                    Ingeniero Informático , encargado de desarrollar soluciones de Software. Conocimientos en HTML, CSS, JAVASCRIPT, JAVA, C# y manejo de centrales telefónicas 
+                    como Asterisk. Enfocado a la resolución de problemas, atención a los detalles, buena gestion del tiempo y acostumbrado a trabajar en equipo. 
+                </p>
+                <div class="social">
+                        <!-- Ancla es un elemento en linea, espera tener un texto y respeta los espacios
+                        <a class="button-icon" href="tel:5566865920">
+                            <img src="./icons/icon-phone.svg">
+                        </a> -->
+                        <a class="button-icon" href="tel:5566865920"><img src="./icons/icon-phone.svg"></a>
+                        <a class="button-icon" href="mailto:Juan_Alberto1997@hotmail.com"><img src="./icons/icon-important_mail.svg"></a>
+                        <a class="button-icon" target="_blank" href="https://twitter.com/JuanGonzalezz2"><img src="./icons/icon-twitter_squared.svg"></a>
+                </div>
+                <a href="./documents/Curriculum.pdf" download="Curriculum.pdf" class="button">Descargar Curriculum</a>
+         </div>     
+    </section>
+
+    <div class="project">
+        <div class="project-image">
+            <img src="./img/challenge.png"  alt="">
+        </div>
+        <div class="project-description">
+            <a class="title" target="_blank" href="https://60a7fc93d6f2170eccda6cc6--objective-ptolemy-a5d646.netlify.app/">404 NOT FOUND</a>
+            <p>Esta aplicación / sitio se creó como un envío a un desafío de 
+                <a target="_blank" href="https://devchallenges.io/solutions/tb448PrkUwHPOfKTG2v9">DevChallenges.</a>
+                Desarrollado con Html y CSS, usando display flex para posicionamiento de elementos.</p>
+            <a target="_blank" href="https://github.com/AlbertGlez97/404-Not-Found" class="button is-secondary">Ver Codigo</a>
+            <a target="_blank" href="https://60a7fc93d6f2170eccda6cc6--objective-ptolemy-a5d646.netlify.app/" class="button">Ver Proyecto</a>
+        </div> 
+    </div>  
+
+    <div class="project">
+        <div class="project-image">
+            <img src="./img/prime.png" alt="">
+        </div>
+        <div class="project-description">
+            <a class="title" target="_blank" href="https://priceless-euler-b6f909.netlify.app/">Platzi Video</a>
+            <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+            tus habilidades como desarrollador Front-End.</p>
+            <a target="_blank" href="https://github.com/AlbertGlez97/platzi-video-front-end" class="button is-secondary">Ver Codigo</a>
+            <a target="_blank" href="https://priceless-euler-b6f909.netlify.app/" class="button">Ver Proyecto</a>
+        </div> 
+    </div>   
+
+    <div class="project">
+        <div class="project-image">
+            <img src="./img/net.png" alt="">
+        </div>
+        <div class="project-description">
+            <a class="title" target="_blank" href="">GonzalezAlberto.com</a>
+            <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+            tus habilidades como desarrollador Front-End.</p>
+            <a target="_blank" href="#" class="button is-secondary">Ver Codigo</a>
+            <a target="_blank" href="#" class="button">Ver Proyecto</a>
+        </div> 
+    </div>   
+     
+    <form action="" method="GET" class="form" name="contact">
+        <!--Hacer que nuestro elemento pase de flexible a bloquer 
+        para manipular los margenes  -->
+        <div class="form-content">
+             <h2 class="title">Hablemos</h2>
+        <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
+            no dude en ponerse en contacto conmigo.</p>
+
+        <label for="form-name">Nombre Completo
+                    <input required name="name" id="form-name" type="text" placeholder="juan">
+        </label>
+
+        <label for="form-name">Correo electronico
+                    <input required name="email" id="form-name" type="email" placeholder="juan">
+        </label>
+
+        <label for="form-name">Nombre Completo
+                    <textarea required name="message" placeholder="Mensaje" id="" cols="30" rows="7"></textarea>
+        </label>
+
+        <button class="button" type="submit">Enviar mensaje</button>
+
+        </div>
+
+    </form>
+
+
+
+    <footer class="footer" id="contact" >
+
+        <!--Hacer que nuestro elemento pase de flexible a bloquer 
+        para manipular los margenes  -->
+        <div class="footer-content">
+            <div class="footer-logo">
+                        <img src="./img/logo.png" width="70" height="20" alt="logo">
+                    </div>
+
+                    <div class="social">
+                        <!-- Ancla es un elemento en linea, espera tener un texto y respeta los espacios
+                        <a class="button-icon" href="tel:5566865920">
+                            <img src="./icons/icon-phone.svg">
+                        </a> -->
+                        <a class="button-icon" href="tel:5566865920"><img src="./icons/icon-phone.svg"></a>
+                        <a class="button-icon" href="mailto:Juan_Alberto1997@hotmail.com"><img src="./icons/icon-important_mail.svg"></a>
+                        <a class="button-icon" target="_blank" href="https://twitter.com/JuanGonzalezz2"><img src="./icons/icon-twitter_squared.svg"></a>
+                    </div>
+                    
+                    <div class="footer-copyright">
+                        <p>
+                            Hecho con ⚡ por Albert.
+                        </p>
+
+                        <p>
+                            Copyright 2021 - Todos los derechos reservados.
+                        </p>
+                    </div>
+        </div>
+
+        
+    </footer>
+
+</div>
+    
+</body>
+</html>

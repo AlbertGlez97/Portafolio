@@ -1,0 +1,76 @@
+.hero{
+    padding-top: 16px;
+}
+
+.hero-description{
+    display: flex;
+    flex-direction: column;
+    /*gap propiedad define el tamaño del espacio entre filas y columnas.*/
+    gap: 16px;
+}
+
+.hero-image{
+    /*Asi se centra en un contexto de bloque*/
+    text-align: center;
+}
+
+/*Asi la imagen se va adaptar a su contenedor y se le pone
+una altura automatica para que no se deforme*/
+.hero-image img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.hero h1{
+    font: var(--headline3);
+    margin: 0;
+}
+
+/*La pseudo-clase :nth-of-type() de CSS selecciona uno
+ o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos.
+.hero h1 span:nth-of-type(1)*/
+.hero h1 span:first-child{
+    font: var(--headline5);
+    display: block;
+}
+/*Modificar tu página web o aplicación en función del tipo de dispositivo (como una impresora 
+o una pantalla) o de características y parámetros específicos (como la resolución de la pantalla 
+o el ancho del viewport del navegador)
+https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries*/
+@media screen and (min-width: 768px){
+.hero{
+    display: flex;
+    gap: 32px;
+}
+
+/*Para imvertir el orden de la imagen*/
+.hero-description{
+    order: 1;
+    max-inline-size: 450px;
+}
+
+.hero-image{
+    order: 2;
+    text-align:end ;
+    /*Valores abreviados para las propiedades flex
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox*/
+    flex: 1;
+}
+}
+
+@media screen and (min-width: 1024px){
+    .hero-image img{
+        width: 500px;
+        height: 504px;
+        /* 
+        Si el modo de escritura es verticalmente orientado, el valor de inline-size se relaciona con la 
+        altura del elemento; de lo contrario, se relaciona con el ancho del elemento. Una propiedad 
+        relacionada es block-size, que define la otra dimensión del elemento.
+        inline-size: 500px;
+        
+        La propiedad de CSS block-size CSS define el tamaño horizontal o vertical de los elementos en bloque,
+        dependiendo de los modos de escritura. estos corresponden ya sea a la propiedad width o la propiedad
+        height
+        block-size: 504px; */
+    }
+}
