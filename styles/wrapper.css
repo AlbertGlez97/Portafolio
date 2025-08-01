@@ -1,8 +1,0 @@
-/*Contiene todos los elementos visuales y el contenido de la página*/
-.wrapper{
-    max-inline-size: 1158px;
-    padding-right: 16px;
-    padding-left: 16px;
-    /*Centrar un elemento que tiene un  tamano y  es un bloque*/
-    margin: auto;
-}
